@@ -34,17 +34,20 @@ const ReviewForm = ({ projectId, updateProject }) => {
                 ({ dirty, isValid }) => {
                     return (
                         <Form>
-                            <label htmlFor='name'>Name: </label><br />
+                            <label htmlFor='name'>Name: </label>
                             <Field name='name' />
                             <div style={{ color:'red' }}>
                                 <ErrorMessage name='name' />
                             </div>
-                            <label htmlFor='review'>Comment: </label><br />
-                            <Field as='textarea' name='review' placeholder='Enter Feedback' rows='5' cols='40' />
+                            <label htmlFor='review'>Comment: </label>
+                            <Field as='textarea' name='review' placeholder='Enter Feedback' rows='5' />
                             <div style={{ color:'red' }}>
                                 <ErrorMessage name='review' />
                             </div>
-                            <button type='submit' disabled={!dirty || !isValid}>Submit Review</button>
+                            <div>
+                                <button type='submit' disabled={!dirty || !isValid}>Submit Review</button>
+                            </div>
+                           
                         </Form>
                     );
                 }

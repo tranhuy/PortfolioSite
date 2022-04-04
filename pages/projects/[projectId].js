@@ -55,17 +55,24 @@ const Project = () => {
                     <ReviewList reviews={project.Reviews} />
                 </div>                            
             </main>
-            <style jsx>{`
+            <style jsx global>{`
                 .review-list {
                     width: 100%;
                 }
                 
                 .review-form {
                     background-color: #D6E7EF;
+                    width: 80%;
                     padding-bottom: 10px;
                     padding-right: 10px;
                     padding-left: 10px;
                     margin: 10px;
+                }
+
+                .review-form form {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
                 }
             `}       
             </style>

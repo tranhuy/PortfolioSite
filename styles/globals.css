@@ -16,11 +16,15 @@ a {
   box-sizing: border-box;
 }
 
-.container {
-  min-height: 92vh;
+.content {
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+.required {
+  color: #FF0000;
+  font-weight: bolder;
 }

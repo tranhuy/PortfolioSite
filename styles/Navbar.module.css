@@ -1,7 +1,18 @@
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #efefef;   
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: cener;
+    align-items: center;
     padding: 1rem 1.5rem;
 }
 

@@ -29,7 +29,7 @@ const Navbar = () => {
 
      return (
          <header>
-            <nav className={styles.navbar}>
+            <nav className={`${styles.navbar} ${styles.fixedHeader}`}>
                 <div className={styles.navlogo}>HUY TRAN</div>
                 <ul className={!isOpen ? styles.navmenu : styles.navmenu + ' ' + styles.active}>
                     <li className={styles.navitem}>

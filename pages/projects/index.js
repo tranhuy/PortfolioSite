@@ -18,16 +18,16 @@ const ProjectItem = ({ project }) => {
 const ProjectList = ({ projects }) => {
     return (
         <div>
-        <Head>
-            <title>Projects</title>
-        </Head>
-        <main className='content'>
-            <h3 className='text-3xl font-bold mb-8'>My Projects</h3>
-            <div className='p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2'>
-                {projects.map(project => 
-                    <ProjectItem key={project._id} project={project} />)}
-            </div>
-        </main>
+            <Head>
+                <title>Projects</title>
+            </Head>
+            <main className='content'>
+                <h3 className='text-3xl font-bold mb-8'>My Projects</h3>
+                <div className='p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2'>
+                    {projects.map(project => 
+                        <ProjectItem key={project._id} project={project} />)}
+                </div>
+            </main>
         </div>
     )
 }

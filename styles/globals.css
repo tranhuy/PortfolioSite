@@ -17,6 +17,7 @@ a {
 }
 
 .content {
+  margin-top: 60px;
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;

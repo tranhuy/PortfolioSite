@@ -16,22 +16,33 @@ const Navbar = () => {
         }      
     }
 
+    const ClearActive = () => {
+        const elements = document.getElementsByClassName(styles.active);
+        Array.from(elements).forEach(ele => ele.classList.remove(styles.active));
+    }
+
+    const SelectNavItem = e => {
+        CloseMenu();
+        ClearActive();
+        e.target.classList.add(styles.active);
+    }
+
      return (
-         <header className={styles.header}>
+         <header>
             <nav className={styles.navbar}>
                 <div className={styles.navlogo}>HUY TRAN</div>
                 <ul className={!isOpen ? styles.navmenu : styles.navmenu + ' ' + styles.active}>
                     <li className={styles.navitem}>
-                        <Link href='/'><a className={styles.navlink} onClick={CloseMenu}>Home</a></Link>
+                        <Link href='/'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Home</a></Link>
                     </li>
                     <li className={styles.navitem}>
-                        <Link href='/about'><a className={styles.navlink} onClick={CloseMenu}>About</a></Link>
+                        <Link href='/about'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>About</a></Link>
                     </li>
                     <li className={styles.navitem}>
-                        <Link href='/projects'><a className={styles.navlink} onClick={CloseMenu}>Projects</a></Link>
+                        <Link href='/projects'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Projects</a></Link>
                     </li>
                     <li className={styles.navitem}>
-                        <Link href='/contact'><a className={styles.navlink} onClick={CloseMenu}>Contact</a></Link>
+                        <Link href='/contact'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Contact</a></Link>
                     </li>
                 </ul>
                 <button className={!isOpen ? styles.hamburger : styles.hamburger + ' ' + styles.active} onClick={OpenMenu}>

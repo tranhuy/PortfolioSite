@@ -24,8 +24,8 @@ const Project = () => {
     const router = useRouter();
     const { projectId } = router.query;
     const url = `/api/projects/${projectId}`;
-    const { data } = useSWR(url, fetcher)
-    
+    const { data } = useSWR(projectId ? url : null, fetcher)
+
     useEffect(() => {
         if (data) {
             setProject(data);

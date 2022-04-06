@@ -1,71 +1,11 @@
 [
     {
-        "Name": "React Redux Project",
-        "Description": "My first react redux project",
-        "url": "www.myreact.com/redux",
-        "githubUrl": "https://github.com/vercel/next.js/tree/canary/examples/with-apollo-and-redux",
-        "Reviews" : [
-            {
-                "Author": "Huy Tran",
-                "CreationTime": "2022-03-29",
-                "Review": "This was a great project!"
-            },
-            {
-                "Author": "Amy Adams",
-                "CreationTime": "2022-02-15",
-                "Review": "Great work.  This project was a good showcase of your various web dev skills."
-            },
-            {
-                "Author": "Jessica Simpson",
-                "CreationTime": "2022-03-22",
-                "Review": "Excellent job!"
-            }
-        ]
-    },
-    {
-        "Name": "React GraphQL Project",
-        "Description": "My first react graphql project",
-        "url": "www.myreact.com/graphql",
-        "githubUrl": "https://github.com/vercel/next.js/tree/canary/examples/api-routes-graphql",
-        "Reviews" : [
-            {
-                "Author": "John Doe",
-                "CreationTime": "2022-03-09",
-                "Review": "This was a great project!"
-            },
-            {
-                "Author": "Judy Garland",
-                "CreationTime": "2022-01-24",
-                "Review": "Great work.  This project was a good showcase of your various web dev skills."
-            }
-        ]
-    },
-    {
-        "Name": "React Typescript Project",
-        "Description": "My first react typescript project",
-        "url": "www.myreact.com/typescript",
-        "githubUrl": "https://github.com/vercel/next.js/tree/canary/examples/with-stripe-typescript",
-        "Reviews" : [
-            {
-                "Author": "Elton John",
-                "CreationTime": "2022-02-03",
-                "Review": "This was a great project!"
-            },
-            {
-                "Author": "Chris Rock",
-                "CreationTime": "2022-03-16",
-                "Review": "Great work.  This project was a good showcase of your various web dev skills."
-            },
-            {
-                "Author": "Myles Davis",
-                "CreationTime": "2022-03-30",
-                "Review": "Excellent job!"
-            },
-            {
-                "Author": "Robert Johnson",
-                "CreationTime": "2022-02-13",
-                "Review": "Excellent job!"
-            }
-        ]
+        "Name": "Blogify",
+        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "PreviewImageName": "blogify.png",
+        "skills": ["React", "React-Redux", "styled-components", "Bootstrap", "NodeJS", "Express", "MongoDB"],
+        "url": "https://app-blog-huy.herokuapp.com/",
+        "githubUrl": "https://github.com/tranhuy/React-Course-Exercises",
+        "Reviews" : []
     }
 ]

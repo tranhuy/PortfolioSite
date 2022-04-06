@@ -1,16 +1,37 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import clientPromise from '../../utils/mongodb'
 
 const ProjectItem = ({ project }) => {
     return (       
-        <div>
-            <Link href={`/projects/${project._id}`} passHref>
-                <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm hover:bg-sky-700 hover:text-white hover:cursor-pointer'>
-                    <p>{project.Name}</p>
-                </div>
-            </Link>
+        <div className='relative group rounded-lg shadow-lg bg-white w-48 h-56 p-2 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
+            <div className='transform duration-500 ease-in-out group-hover:opacity-0'>
+                <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' /> 
+            </div>
+            <div className='absolute transform duration-500 ease-in-out inset-y-5/6 group-hover:inset-y-2'>
+                <h5 className='truncate text-gray-900 text-xl font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
+                <p className='text-gray-700 text-sm mb-4 line-clamp-6 group-hover:text-white'>{project.Description}</p>
+                <div className='translate-x-1/5'>
+                    <Link href={`/projects/${project._id}`} passHref>
+                        <button type='button' className='inline-block 
+                            px-6 py-2.5 
+                            bg-blue-600 
+                            text-white 
+                            font-medium 
+                            text-xs 
+                            leading-tight 
+                            rounded 
+                            shadow-md 
+                            hover:bg-blue-700 hover:shadow-lg 
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 
+                            active:bg-blue-800 active:shadow-lg 
+                            transition duration-150 ease-in-out'>More Info
+                        </button>
+                    </Link>
+                </div>               
+            </div>  
         </div>      
     );
 }
@@ -23,7 +44,7 @@ const ProjectList = ({ projects }) => {
             </Head>
             <main className='content'>
                 <h3 className='text-3xl font-bold mb-8'>My Projects</h3>
-                <div className='p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2'>
+                <div className='flex flex-wrap justify-center gap-5'>
                     {projects.map(project => 
                         <ProjectItem key={project._id} project={project} />)}
                 </div>

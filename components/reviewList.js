@@ -13,9 +13,9 @@ const ReviewList = ({ reviews }) => {
         <>
             {reviews.map((review, index) => {
                 return (
-                    <div key={index} className='p-4 shadow-lg rounded-lg bg-gray-100 text-gray-700'>
+                    <div key={index}>
                         <ReviewItem review={review} />
-                        <hr className='my-2 border-gray-300' />
+                        <hr className='my-4 border-gray-300' />
                     </div>
                 )
             })}   

@@ -12,7 +12,7 @@ const ProjectItem = ({ project }) => {
             </div>
             <div className='absolute p-2 inset-x-0 inset-y-5/6 transform duration-500 ease-in-out group-hover:inset-y-2'>
                 <h5 className='truncate text-gray-900 text-xl font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
-                <p className='text-gray-700 text-sm mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
+                <p className='text-gray-700 h-[7.5rem] text-sm mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
                 <div className='text-center'>
                     <Link href={`/projects/${project._id}`} passHref>
                         <button type='button' className='inline-block 

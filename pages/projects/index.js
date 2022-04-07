@@ -6,14 +6,14 @@ import clientPromise from '../../utils/mongodb'
 
 const ProjectItem = ({ project }) => {
     return (       
-        <div className='relative group rounded-lg shadow-lg bg-white w-48 h-56 p-2 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
+        <div className='relative group rounded-lg shadow-lg bg-white w-56 h-64 p-2 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
             <div className='transform duration-500 ease-in-out group-hover:opacity-0'>
                 <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' /> 
             </div>
-            <div className='absolute transform duration-500 ease-in-out inset-y-5/6 group-hover:inset-y-2'>
+            <div className='absolute p-2 inset-x-0 inset-y-5/6 transform duration-500 ease-in-out group-hover:inset-y-2'>
                 <h5 className='truncate text-gray-900 text-xl font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
-                <p className='text-gray-700 text-sm mb-4 line-clamp-6 group-hover:text-white'>{project.Description}</p>
-                <div className='translate-x-1/5'>
+                <p className='text-gray-700 text-sm mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
+                <div className='text-center'>
                     <Link href={`/projects/${project._id}`} passHref>
                         <button type='button' className='inline-block 
                             px-6 py-2.5 

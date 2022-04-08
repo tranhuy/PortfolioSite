@@ -96,7 +96,7 @@ const Project = () => {
                             <ReviewForm projectId={project._id} updateProject={setProject} notify={showNotification} />
                         </div>                   
                     </div>
-                    <div className='p-4 shadow-lg rounded-lg bg-gray-100 text-gray-700 max-w-fit'>
+                    <div className='p-4 shadow-lg rounded-lg bg-gray-100 text-gray-700 min-w-full max-w-fit'>
                         <h4 className='text-2xl font-semibold mb-2 text-center'>Reviews</h4>
                         <ReviewList reviews={project.Reviews} />
                     </div>

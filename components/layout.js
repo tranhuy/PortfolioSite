@@ -1,11 +1,13 @@
-import Navbar from "./navbar"
+import Navbar from './navbar'
+import Footer from './footer'
 
 const Layout = ({ children }) => {
      return (
-         <>
+         <div className='flex flex-col h-screen'>
              <Navbar />
-             {children}
-         </>
+             <div className='grow'>{children}</div>
+             <Footer />
+         </div>
      )
 }
 

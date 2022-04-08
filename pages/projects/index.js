@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
                 <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' /> 
             </div>
             <div className='absolute p-2 inset-x-0 inset-y-5/6 transition-[top] duration-500 ease-in-out group-hover:inset-y-2'>
-                <h5 className='truncate text-gray-900 text-xl font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
+                <h5 className='truncate text-gray-900 text-xl text-center font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
                 <div className='h-[9rem]'>
                     <p className='text-gray-700 text-sm mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
                 </div>
@@ -29,7 +29,7 @@ const ProjectItem = ({ project }) => {
                             hover:bg-blue-700 hover:shadow-lg 
                             focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 
                             active:bg-blue-800 active:shadow-lg 
-                            transition duration-150 ease-in-out'>More Info
+                            transition duration-150 ease-in-out'>Show More
                         </button>
                     </Link>
                 </div>               

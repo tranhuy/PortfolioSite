@@ -58,11 +58,6 @@
     width: 100%;
 }
 
-.navlogo {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
 .hamburger {
     display: none;
     background-color: transparent;

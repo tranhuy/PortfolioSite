@@ -1,5 +1,6 @@
-import Link from "next/link"
-import { useState } from "react"
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
 
 import styles from '../styles/Navbar.module.css'
 
@@ -30,7 +31,7 @@ const Navbar = () => {
      return (
          <header>
             <nav className={`${styles.navbar} ${styles.fixedHeader}`}>
-                <div className={styles.navlogo}>HUY TRAN</div>
+                <Image src='/images/logo.png' alt='logo' width={120} height={50} className='invisible md:visible' /> 
                 <ul className={!isOpen ? styles.navmenu : styles.navmenu + ' ' + styles.active}>
                     <li className={styles.navitem}>
                         <Link href='/'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Home</a></Link>

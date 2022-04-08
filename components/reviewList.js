@@ -1,10 +1,10 @@
 const ReviewItem = ({ review }) => {
      return (
-         <div>
+         <>
              <p className='font-semibold text-lg mb-5'>{review.Author}</p>            
              <p>{review.Review}</p><br/>
              <p className='italic'>{review.CreationTime}</p>
-         </div>
+         </>
      )
 }
 

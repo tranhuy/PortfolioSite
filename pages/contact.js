@@ -7,18 +7,18 @@ const Contact = () => {
     const [ notification, showNotification ] = useNotification();
 
     return (
-        <div>
+        <>
             <Head>
                 <title>Contact Me</title>
             </Head>        
             <main className='content'>
                 <Alert message={notification} />
-                <h3 className='text-3xl font-bold mb-8'>Contact Me</h3>
+                <h3 className='mb-8'>Contact Me</h3>
                 <div className='p-6 border-2 rounded-lg'>
                     <ContactForm notify={showNotification} />
                 </div>
             </main>
-        </div>
+        </>
     )
 }
 

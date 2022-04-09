@@ -4,13 +4,13 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Home</title>
 			</Head>
 			<main className='content'>
-				<h2>Home</h2>
+				<h3 className='mb-8'>Home</h3>
 			</main>		
-		</div>
+		</>
   )
 }

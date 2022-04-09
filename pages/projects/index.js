@@ -40,18 +40,18 @@ const ProjectItem = ({ project }) => {
 
 const ProjectList = ({ projects }) => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Projects</title>
             </Head>
             <main className='content'>
-                <h3 className='text-3xl font-bold mb-8'>My Projects</h3>
+                <h3 className='mb-8'>My Projects</h3>
                 <div className='flex flex-wrap justify-center gap-5'>
                     {projects.map(project => 
                         <ProjectItem key={project._id} project={project} />)}
                 </div>
             </main>
-        </div>
+        </>
     )
 }
 

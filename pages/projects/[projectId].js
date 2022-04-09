@@ -40,13 +40,13 @@ const Project = () => {
     } 
 
     return (
-        <div>
+        <>
             <Head>
 				<title>{project.Name}</title>
 			</Head>
             <main className='content'>
                 <Alert message={notification} />
-                <h3 className='text-3xl font-bold mb-8'>{project.Name}</h3>
+                <h3 className='mb-8'>{project.Name}</h3>
                 <div className='flex flex-col'>
                     <div className='flex flex-wrap justify-center gap-x-8'>
                         <div className='flex flex-col justify-center mb-4 space-y-4 max-w-md'>
@@ -58,35 +58,11 @@ const Project = () => {
                             </div>
                             <div className='flex place-content-center space-x-4'>
                                 <a href={setHttp(project.url)} target='_blank' rel='noreferrer'>
-                                    <button type='button' className='inline-block
-                                        px-6 py-2.5 
-                                        bg-blue-600 
-                                        text-white 
-                                        font-medium 
-                                        text-xs 
-                                        leading-tight 
-                                        uppercase rounded shadow-lg 
-                                        hover:bg-blue-700 hover:shadow-lg                                 
-                                        focus:outline-none focus:ring-0 
-                                        active:bg-blue-800 
-                                        active:shadow-lg transition 
-                                        duration-150 ease-in-out'>View Live
+                                    <button type='button' className='defaultButton'>View Live
                                     </button>
                                 </a>
                                 <a href={setHttp(project.githubUrl)} target='_blank' rel='noreferrer'>
-                                    <button type='button' className='inline-block
-                                        px-6 py-2.5 
-                                        bg-blue-600 
-                                        text-white 
-                                        font-medium 
-                                        text-xs 
-                                        leading-tight 
-                                        uppercase rounded shadow-lg 
-                                        hover:bg-blue-700 hover:shadow-lg 
-                                        focus:outline-none focus:ring-0 
-                                        active:bg-blue-800 
-                                        active:shadow-lg transition 
-                                        duration-150 ease-in-out'>View Code
+                                    <button type='button' className='defaultButton'>View Code
                                     </button>
                                 </a>
                             </div>
@@ -102,7 +78,7 @@ const Project = () => {
                     </div>
                 </div>                                      
             </main>
-         </div>
+         </>
     )
 }
 

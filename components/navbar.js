@@ -31,7 +31,7 @@ const Navbar = () => {
      return (
          <header>
             <nav className={`${styles.navbar} ${styles.fixedHeader}`}>
-                <Image src='/images/logo.png' alt='logo' width={120} height={50} className='invisible md:visible' /> 
+                <Image src='/images/logo_inverted.png' alt='logo' width={120} height={50} className='invisible md:visible' /> 
                 <ul className={!isOpen ? styles.navmenu : styles.navmenu + ' ' + styles.active}>
                     <li className={styles.navitem}>
                         <Link href='/'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Home</a></Link>

@@ -26,6 +26,7 @@
       items-center 
       leading-tight 
       tracking-wide
+      break-normal
       uppercase rounded shadow-lg 
       hover:bg-blue-700 hover:shadow-lg 
       focus:outline-none focus:ring-0 

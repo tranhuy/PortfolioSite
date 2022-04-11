@@ -6,14 +6,14 @@ import clientPromise from '../../utils/mongodb'
 
 const ProjectItem = ({ project }) => {
     return (       
-        <div className='relative group rounded-lg shadow-lg bg-white w-56 h-64 p-2 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
+        <div className='relative group rounded-lg shadow-lg bg-white w-72 h-80 p-4 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
             <div className='transform duration-500 ease-in-out group-hover:opacity-0'>
                 <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' priority /> 
             </div>
-            <div className='absolute p-2 inset-x-0 inset-y-5/6 transition-[top] duration-500 ease-in-out group-hover:inset-y-2'>
-                <h5 className='truncate text-gray-900 text-xl text-center font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
-                <div className='h-[9rem]'>
-                    <p className='text-gray-700 text-sm mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
+            <div className='absolute p-4 inset-x-0 inset-y-5/6 transition-[top] duration-500 ease-in-out group-hover:inset-y-2'>
+                <h5 className='truncate text-gray-900 text-2xl text-center font-medium mb-4 group-hover:text-white'>{project.Name}</h5>
+                <div className='h-[12rem]'>
+                    <p className='text-gray-700 mb-6 line-clamp-6 group-hover:text-white'>{project.Description}</p>
                 </div>
                 <div className='flex place-content-center'>
                     <Link href={`/projects/${project._id}`} passHref>

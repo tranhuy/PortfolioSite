@@ -4,6 +4,8 @@ import Layout from '../components/layout'
 import '../styles/globals.css'
 // import 'tailwindcss/tailwind.css'
 
+global.firstLoad = true;
+
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>

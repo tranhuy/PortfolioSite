@@ -8,7 +8,7 @@ const ProjectItem = ({ project }) => {
     return (       
         <div className='relative group rounded-lg shadow-lg bg-white w-56 h-64 p-2 overflow-hidden transform duration-500 ease-in-out hover:bg-sky-900'> 
             <div className='transform duration-500 ease-in-out group-hover:opacity-0'>
-                <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' /> 
+                <Image src={`/images/${project.PreviewImageName}`} alt='Project Preview Image' width='100%' height='100%' objectFit='contain' layout='responsive' priority /> 
             </div>
             <div className='absolute p-2 inset-x-0 inset-y-5/6 transition-[top] duration-500 ease-in-out group-hover:inset-y-2'>
                 <h5 className='truncate text-gray-900 text-xl text-center font-medium mb-2 group-hover:text-white'>{project.Name}</h5>
@@ -45,7 +45,7 @@ const ProjectList = ({ projects }) => {
                 <title>Projects</title>
             </Head>
             <main className='content'>
-                <h3 className='mb-8'>My Projects</h3>
+                <h3 className='font-bold mb-8'>My Projects</h3>
                 <div className='flex flex-wrap justify-center gap-5'>
                     {projects.map(project => 
                         <ProjectItem key={project._id} project={project} />)}

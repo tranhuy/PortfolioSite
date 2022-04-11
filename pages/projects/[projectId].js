@@ -44,8 +44,8 @@ const Project = () => {
             <Head>
 				<title>{project.Name}</title>
 			</Head>
-            <main className='content'>
-                <Alert message={notification} />
+            <Alert message={notification} />
+            <main className='content'>               
                 <h3 className='mb-8'>{project.Name}</h3>
                 <div className='flex flex-col'>
                     <div className='flex flex-wrap justify-center gap-x-8'>

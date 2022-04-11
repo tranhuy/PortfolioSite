@@ -31,11 +31,12 @@ const Navbar = () => {
      return (
          <header>
             <nav className={`${styles.navbar} ${styles.fixedHeader}`}>
-                <Image src='/images/logo_inverted.png' alt='logo' width={120} height={50} className='invisible md:visible' /> 
+                <div className='mx-auto md:mx-0'>
+                <Link href='/'>
+                    <a onClick={ClearActive}><Image src='/images/logo_inverted.png' alt='logo' width={120} height={50} /></a>
+                </Link>
+                </div>
                 <ul className={!isOpen ? styles.navmenu : styles.navmenu + ' ' + styles.active}>
-                    <li className={styles.navitem}>
-                        <Link href='/'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>Home</a></Link>
-                    </li>
                     <li className={styles.navitem}>
                         <Link href='/about'><a className={styles.navlink} onClick={e => SelectNavItem(e)}>About</a></Link>
                     </li>

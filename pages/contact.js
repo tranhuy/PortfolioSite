@@ -10,10 +10,10 @@ const Contact = () => {
         <>
             <Head>
                 <title>Contact Me</title>
-            </Head>        
-            <main className='content'>
-                <Alert message={notification} />
-                <h3 className='mb-8'>Contact Me</h3>
+            </Head>
+            <Alert message={notification} />        
+            <main className='content'>               
+                <h3 className='font-bold mb-8'>Contact Me</h3>
                 <div className='p-6 border-2 rounded-lg'>
                     <ContactForm notify={showNotification} />
                 </div>

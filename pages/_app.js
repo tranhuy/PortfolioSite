@@ -9,9 +9,9 @@ global.firstLoad = true;
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-		<Head>
-			<link rel='favicon' href='/favicon.ico' />
-		</Head>
+      <Head>
+        <link rel='favicon' href='/favicon.ico' />
+      </Head>
     	<Component {...pageProps} />
     </Layout>
   )

@@ -1,11 +1,38 @@
 [
     {
         "Name": "Blogify",
-        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "Description": "Creating blogs has never been more fun. With Blogify you can not only compose blogs, you also have the options to like and comment on blogs which pique your interest.  View the vast collection of blogs from bloggers around the world.",
         "PreviewImageName": "blogify.png",
-        "skills": ["React", "React-Redux", "styled-components", "Bootstrap", "NodeJS", "Express", "MongoDB"],
-        "url": "https://app-blog-huy.herokuapp.com/",
-        "githubUrl": "https://github.com/tranhuy/React-Course-Exercises",
+        "skills": ["React", "React-Redux", "styled-components", "Bootstrap", "NodeJS", "Express", "Mongoose", "MongoDB"],
+        "url": "https://ht-blogify.netlify.app",
+        "githubUrl": "https://github.com/tranhuy/Blogify",
+        "Reviews" : []
+    },
+    {
+        "Name": "Books 'R' Us",
+        "Description": "Are you are bookwarm?  Come check out the catalog of books that Books 'R' Us has to offer.  Discoverd a new book you like?  Add it the catalog and share it with your friends.",
+        "PreviewImageName": "booksrus.png",
+        "skills": ["React", "Apollo GraphQL", "NodeJS", "Express", "Mongoose", "MongoDB"],
+        "url": "https://ht-books-r-us.netlify.app/",
+        "githubUrl": "https://github.com/tranhuy/BooksRUs",
+        "Reviews" : []
+    },
+    {
+        "Name": "Patient Tracker",
+        "Description": "Does your health organization need a patient record management tool that's easy to use and reliable?  I invite you to try out Patient Tracker and streamline your patient record responsibilities.",
+        "PreviewImageName": "patienttracker.png",
+        "skills": ["React", "React Context API", "Semantic UI React", "Formik", "Typescript", "NodeJS", "Express"],
+        "url": "https://ht-patient-tracker.netlify.app",
+        "githubUrl": "https://github.com/tranhuy/PatientTracker",
+        "Reviews" : []
+    },
+    {
+        "Name": "Repo Rater",
+        "Description": "Rating repositories couldn't be any more fun. Come browse the collection of GitHub repositories from a variety of developers and let them know how you feel about their projects.",
+        "PreviewImageName": "reporater.png",
+        "skills": ["React", "React Native", "Apollo GraphQL", "NodeJS", "Express"],
+        "url": "https://ht-repo-rater.netlify.app",
+        "githubUrl": "https://github.com/tranhuy/app_RepoRater",
         "Reviews" : []
     }
 ]

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '500px'
+        'sm': '500px',
+        'hover-hover': {'raw': '(hover: hover)'},
       },
       inset: {
         '5/6': '83%'

@@ -6,7 +6,7 @@ const validationSchema = yup.object().shape({
     review: yup.string().required('Review is required'),
 });
 
-const ReviewForm = ({ projectId, updateProject, notify }) => {
+const ReviewForm = ({ projectId, updateProject, notify, toggleModal }) => {
     const AddReview = async (review, { resetForm }) => {     
         try {
             const response = await fetch(`/api/projects/${projectId}`, {
@@ -19,6 +19,7 @@ const ReviewForm = ({ projectId, updateProject, notify }) => {
             const updatedProject = await response.json();
             updateProject(updatedProject);
             notify('Thank you for taking the time to leave a review!');
+            toggleModal();
             resetForm({});
         } catch (err) {
             console.log(err.message);

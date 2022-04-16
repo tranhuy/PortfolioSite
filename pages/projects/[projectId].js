@@ -49,7 +49,7 @@ const Project = () => {
             <Alert message={notification} />
             <Modal ref={modalRef}>
                 <h4 className='text-2xl text-center mb-6'>Leave a review</h4>      
-                <ReviewForm projectId={project._id} updateProject={setProject} notify={showNotification} toggleModal={() => modalRef.current?.toggleModal()} />
+                <ReviewForm projectId={project._id} updateProject={setProject} notify={showNotification} hideModal={() => modalRef.current?.hideModal()} />
             </Modal>
             <main className='content'>
                 <h3 className='mb-8'>{project.Name}</h3>
@@ -71,7 +71,7 @@ const Project = () => {
                                     <button type='button' className='defaultButton'>View Code
                                     </button>
                                 </a>
-                                <button type='button' className='defaultButton' onClick={() => modalRef.current?.toggleModal()}>Submit Review</button>
+                                <button type='button' className='defaultButton' onClick={() => modalRef.current?.showModal()}>Submit Review</button>
                             </div>
                         </div>               
                     </div>

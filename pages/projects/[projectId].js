@@ -55,11 +55,11 @@ const Project = () => {
                 <h3 className='mb-8'>{project.Name}</h3>
                 <div className='flex flex-col'>
                     <div className='flex flex-wrap justify-center gap-x-8'>
-                        <div className='flex flex-col justify-center mb-4 space-y-4 max-w-xl'>
+                        <div className='flex flex-col justify-center mb-4 space-y-4 max-w-3xl'>
                             <div>
                                 {project.Description}
                             </div>
-                            <div className='py-2 border-y-2 text-sky-600'>
+                            <div className='py-2 border-y-2 text-sky-600 text-center'>
                                 {project.skills.join(' / ')}
                             </div>
                             <div className='flex place-content-center space-x-4'>

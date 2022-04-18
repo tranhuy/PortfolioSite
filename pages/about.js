@@ -15,13 +15,13 @@ const About = () => {
                             <Image src='/images/me.png' alt='Profile Pic' layout='fill' className='rounded-full' /> 
                         </div>
                     </div>
-                    <div className='max-w-md text-center'>
+                    <div className='max-w-3xl text-center'>
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                        Hello, my name is Huy and I'm a full stack developer with experience developing software for web, desktop, and mobile.  My journey into software development began with my first job in the telecommunications sector where I gained an interest in mobile and web technologies. This led me to go back to college to pursue a career in computer science.  After completing my studies I had the opportunity to apply my knowledge of various programming languages and frameworks to develop and maintain e-portal sites and invoice generating software for billing providers, voice recognition software for Radiologists,  medical record management software for health practitioners, and both the web-based and desktop radiological information system (RIS) imaging software.
                         </p>
                         <br /> 
                         <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Throughout my years in the industry, the continual learning, challenges to creativity, and problem solving demands are some of the main factors that motivate me to refine my skill sets and expand on them.  I look forward to join a team of other skilled and passionate developers to share my knowledge and experiences towards building and improving applications.
                         </p> 
                     </div>
                               

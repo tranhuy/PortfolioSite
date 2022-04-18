@@ -27,8 +27,9 @@ export default function Home() {
 				<title>Home</title>
 			</Head>
 			<main className='content'>
-				<Image src={background} alt='backgroungImg' objectFit='cover' layout='fill' className='z-0 object-left lg:object-center' priority />
-				<div className="w-full h-full flex flex-col justify-center items-center z-10">
+				<div className='absolute inset-0 bg-black opacity-10 z-10'></div>
+				<Image src={background} alt='backgroungImg' objectFit='cover' layout='fill' className='object-left lg:object-center' priority />
+				<div className="w-full h-full flex flex-col justify-center items-center z-20">
 					<div className='flex flex-col place-items-center'>
 						<div className='text-white text-center leading-relaxed font-bold text-[10vw] sm:text-[3.2rem]'>Huy Tran</div>
 						<div id='divider' className='w-full h-px bg-white'></div>

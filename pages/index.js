@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { useEffect } from 'react';
 
-import background from '../public/images/background.jpg'
+import background from '../public/images/background.webp'
 
 import styles from '../styles/Home.module.css'
 

@@ -12,7 +12,7 @@ const About = () => {
                 <div className='flex flex-col items-center gap-6'>
                     <div className='relative w-48 h-48 border-4 border-[#19427d] border-opacity-75 rounded-full shadow-lg'>
                         <div className='relative w-full h-full border-4 border-white rounded-full'>
-                            <Image src='/images/me.png' alt='Profile Pic' layout='fill' className='rounded-full' priority /> 
+                            <Image src='/images/me.webp' alt='Profile Pic' layout='fill' className='rounded-full' priority /> 
                         </div>
                     </div>
                     <div className='max-w-3xl text-center'>

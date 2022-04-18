@@ -12,12 +12,12 @@ const About = () => {
                 <div className='flex flex-col items-center gap-6'>
                     <div className='relative w-48 h-48 border-4 border-[#19427d] border-opacity-75 rounded-full shadow-lg'>
                         <div className='relative w-full h-full border-4 border-white rounded-full'>
-                            <Image src='/images/me.png' alt='Profile Pic' layout='fill' className='rounded-full' /> 
+                            <Image src='/images/me.png' alt='Profile Pic' layout='fill' className='rounded-full' priority /> 
                         </div>
                     </div>
                     <div className='max-w-3xl text-center'>
                         <p>
-                        Hello, my name is Huy and I'm a full stack developer with experience developing software for web, desktop, and mobile.  My journey into software development began with my first job in the telecommunications sector where I gained an interest in mobile and web technologies. This led me to go back to college to pursue a career in computer science.  After completing my studies I had the opportunity to apply my knowledge of various programming languages and frameworks to develop and maintain e-portal sites and invoice generating software for billing providers, voice recognition software for Radiologists,  medical record management software for health practitioners, and both the web-based and desktop radiological information system (RIS) imaging software.
+                        Hello, my name is Huy and I&#39;m a full stack developer with experience developing software for web, desktop, and mobile.  My journey into software development began with my first job in the telecommunications sector where I gained an interest in mobile and web technologies. This led me to go back to college to pursue a career in computer science.  After completing my studies I had the opportunity to apply my knowledge of various programming languages and frameworks to develop and maintain e-portal sites and invoice generating software for billing providers, voice recognition software for Radiologists,  medical record management software for health practitioners, and both the web-based and desktop radiological information system (RIS) imaging software.
                         </p>
                         <br /> 
                         <p>
